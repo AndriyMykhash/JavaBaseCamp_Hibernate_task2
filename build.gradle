@@ -1,0 +1,28 @@
+plugins {
+    id 'java'
+}
+
+group 'DZ'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile group: 'mysql', name: 'mysql-connector-java', version: '5.1.37'
+    compile group: 'org.hibernate', name: 'hibernate-core', version: '5.3.7.Final'
+    compile group: 'javax.xml.bind', name: 'jaxb-api', version: '2.3.0'
+    compile group: 'org.glassfish.jaxb', name: 'jaxb-runtime', version: '2.3.0.1'
+
+    compile group: 'com.sun.xml.bind', name: 'jaxb-core', version: '2.2.11'
+    compile group: 'com.sun.xml.bind', name: 'jaxb-impl', version: '2.3.0'
+//    compile group: 'org.javassist', name: 'javassist', version: '3.15.0-GA'
+//    compile group: 'com.h2database', name: 'h2', version: '1.4.197'
+//    compile group: 'log4j', name: 'log4j', version: '1.2.17'
+
+
+}
